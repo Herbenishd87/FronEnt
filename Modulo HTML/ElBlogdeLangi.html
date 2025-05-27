@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sabores y Rutas de Colombia - Tu Blog de Viajes y Comida</title>
+    <link rel="stylesheet" href="ElBlogdeLangi.html">
+    <link rel="stylesheet" href="../Modulo%20CSS/ElBlogdeLangi.css">
+  
+</head>
+<body>
+    <header class="main-header">
+        <div class="container header-content">
+            <h1 class="logo"><a href="#home">Sabores y Rutas <span class="highlight-text">LANGI</span></a></h1>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="#viajes" class="nav-link">Viajes</a></li>
+                    <li><a href="#comida" class="nav-link">Comida</a></li>
+                    <li><a href="#sobre-mi" class="nav-link">Sobre Mí</a></li> <li><a href="#contacto" class="nav-link">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero-section" id="home">
+        <div class="hero-content">
+            <h2>Explora Colombia: Aventuras para el Paladar y el Alma</h2>
+            <p>Sumérgete en la vibrante cultura colombiana a través de sus paisajes espectaculares y su exquisita gastronomía. ¡Tu aventura comienza aquí!</p>
+            <div class="hero-buttons">
+                <a href="#viajes" class="btn primary-btn">Descubre Viajes <i class="fas fa-plane-departure"></i></a>
+                <a href="#comida" class="btn secondary-btn">Deléitate con la Comida <i class="fas fa-utensils"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <section id="viajes" class="section-padding bg-light">
+        <div class="container">
+            <h2 class="section-title">Aventuras por Colombia <i class="fas fa-plane-departure icon-vibrant"></i></h2>
+            <div class="grid-layout">
+                <article class="post-card travel-card">
+                    <div class="post-media">
+                        <img src="https://images.unsplash.com/photo-1623912140417-a06f33d262ed?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NTIyMDF8MHwxfHNlYXJjaHw3fHxjYXJ0YWdlbmF8ZW58MHx8fHwxNzE3NTM2NjA4fDA&ixlib=rb-4.0.3&q=80&w=1920" alt="Calles de Cartagena">
+                        <span class="card-overlay"><i class="fas fa-map-marker-alt"></i> Cartagena</span>
+                    </div>
+                    <div class="post-content">
+                        <h3>Cartagena: Un Sueño Colonial a Orillas del Caribe</h3>
+                        <div class="post-date"><i class="far fa-calendar-alt"></i> 15 Mayo, 2025</div>
+                        <p>Recorre las coloridas calles de Cartagena, sus balcones floridos y la majestuosidad de su muralla. ¡Una ciudad que enamora!</p>
+                        <div class="post-meta">
+                            <span><i class="far fa-image"></i> 8 Fotos</span>
+                            <span><i class="far fa-comment-alt"></i> 12 Comentarios</span>
+                        </div>
+                        <button class="btn view-details-btn" data-modal-target="#modalCartagena">Ver Detalles y Reseñas</button>
+                    </div>
+                </article>
+
+                <article class="post-card travel-card">
+                    <div class="post-media">
+                        <img src="https://images.unsplash.com/photo-1601633534241-e7cf4c803375?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NTIyMDF8MHwxfHNlYXJjaHw0fHxlamUlMjBjYWZldGVyb3xlbnwwfHx8fDE3MTc1MzY1Mjl8MA&ixlib=rb-4.0.3&q=80&w=1920" alt="Plantaciones de café en el Eje Cafetero">
+                        <span class="card-overlay"><i class="fas fa-seedling"></i> Eje Cafetero</span>
+                    </div>
+                    <div class="post-content">
+                        <h3>Eje Cafetero: El Corazón Verde de Colombia</h3>
+                        <div class="post-date"><i class="far fa-calendar-alt"></i> 10 Mayo, 2025</div>
+                        <p>Sumérgete en el aroma del café mientras exploras las fincas cafeteras, paisajes exuberantes y la cultura paisa. ¡Una experiencia inolvidable!</p>
+                        <div class="post-meta">
+                            <span><i class="far fa-image"></i> 10 Fotos</span>
+                            <span><i class="far fa-comment-alt"></i> 15 Comentarios</span>
+                        </div>
+                        <button class="btn view-details-btn" data-modal-target="#modalEjeCafetero">Ver Detalles y Reseñas</button>
+                    </div>
+                </article>
+
+                <article class="post-card travel-card">
+                    <div class="post-media">
+                        <img src="https://images.unsplash.com/photo-1596706059918-a681c2f9d8a0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NTIyMDF8MHwxfHNlYXJjaHwyfHx0YXlyb25hJTIwY29sb21iaWF8ZW58MHx8fHwxNzE3NTM2NjA4fDA&ixlib=rb-4.0.3&q=80&w=1920" alt="Río Amazonas">
+                        <span class="card-overlay"><i class="fas fa-leaf"></i> Amazonas</span>
+                    </div>
+                    <div class="post-content">
+                        <h3>Amazonas: La Aventura más Salvaje de Colombia</h3>
+                        <div class="post-date"><i class="far fa-calendar-alt"></i> 05 Mayo, 2025</div>
+                        <p>Descubre la exuberante biodiversidad de la selva amazónica, navega por el río más grande del mundo y convive con comunidades indígenas.</p>
+                        <div class="post-meta">
+                            <span><i class="far fa-image"></i> 12 Fotos</span>
+                            <span><i class="far fa-comment-alt"></i> 18 Comentarios</span>
+                        </div>
+                        <button class="btn view-details-btn" data-modal-target="#modalAmazonas">Ver Detalles y Reseñas</button>
+                    </div>
+                </article>
+            </div>
+            <div class="see-more">
+                <a href="#" class="btn primary-btn">Ver Más Viajes <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <section id="comida" class="section-padding">
+        <div class="container">
+            <h2 class="section-title">Sabores de Colombia <i class="fas fa-utensils icon-vibrant"></i></h2>
+            <div class="grid-layout">
+                <article class="post-card food-card">
+                    <div class="post-media">
+                        <img src="https://images.unsplash.com/photo-1579294215383-0599a071239c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NTIyMDF8MHwxfHNlYXJjaHw3fHxiYW5kZWjaJTIwcGFpc2F8ZW58MHx8fHwxNzE3NTM3OTI0fDA&ixlib=rb-4.0.3&q=80&w=1920" alt="Bandeja Paisa">
+                        <span class="card-overlay"><i class="fas fa-map-marker-alt"></i> Antioquia</span>
+                    </div>
+                    <div class="post-content">
+                        <h3>Bandeja Paisa: El Sabor Emblemático de Antioquia</h3>
+                        <div class="post-date"><i class="far fa-calendar-alt"></i> 20 Abril, 2025</div>
+                        <p>Descubre la riqueza y abundancia de la Bandeja Paisa, un plato que es un verdadero festín de sabores y texturas.</p>
+                        <div class="post-meta">
+                            <span><i class="far fa-image"></i> 6 Fotos</span>
+                            <span><i class="far fa-comment-alt"></i> 10 Comentarios</span>
+                        </div>
+                        <button class="btn view-details-btn" data-modal-target="#modalBandejaPaisa">Ver Detalles y Receta</button>
+                    </div>
+                </article>
+
+                <article class="post-card food-card">
+                    <div class="post-media">
+                        <img src="https://images.unsplash.com/photo-1623912140417-a06f33d262ed?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NTIyMDF8MHwxfHNlYXJjaHw3fHxjYXJ0YWdlbmF8ZW58MHx8fHwxNzE3NTM2NjA4fDA&ixlib=rb-4.0.3&q=80&w=1920" alt="Ajiaco Santafereño">
+                        <span class="card-overlay"><i class="fas fa-map-marker-alt"></i> Bogotá</span>
+                    </div>
+                    <div class="post-content">
+                        <h3>Ajiaco Santafereño: La Tradición Culinaria de Bogotá</h3>
+                        <div class="post-date"><i class="far fa-calendar-alt"></i> 12 Abril, 2025</div>
+                        <p>Conoce los secretos de este delicioso y reconfortante plato bogotano, perfecto para cualquier clima.</p>
+                        <div class="post-meta">
+                            <span><i class="far fa-image"></i> 7 Fotos</span>
+                            <span><i class="far fa-comment-alt"></i> 14 Comentarios</span>
+                        </div>
+                        <button class="btn view-details-btn" data-modal-target="#modalAjiaco">Ver Detalles y Receta</button>
+                    </div>
+                </article>
+
+                <article class="post-card food-card">
+                    <div class="post-media">
+                        <img src="https://images.unsplash.com/photo-1596706059918-a681c2f9d8a0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NTIyMDF8MHwxfHNlYXJjaHwyfHx0YXlyb25hJTIwY29sb21iaWF8ZW58MHx8fHwxNzE3NTM2NjA4fDA&ixlib=rb-4.0.3&q=80&w=1920" alt="Empanadas Colombianas">
+                        <span class="card-overlay"><i class="fas fa-map-marker-alt"></i> Colombia</span>
+                    </div>
+                    <div class="post-content">
+                        <h3>Empanadas Colombianas: El Snack Favorito de Todos</h3>
+                        <div class="post-date"><i class="far fa-calendar-alt"></i> 01 Abril, 2025</div>
+                        <p>Un recorrido por la diversidad de empanadas que encuentras en cada rincón de Colombia.</p>
+                        <div class="post-meta">
+                            <span><i class="far fa-image"></i> 5 Fotos</span>
+                            <span><i class="far fa-comment-alt"></i> 8 Comentarios</span>
+                        </div>
+                        <button class="btn view-details-btn" data-modal-target="#modalEmpanadas">Ver Detalles y Receta</button>
+                    </div>
+                </article>
+            </div>
+            <div class="see-more">
+                <a href="#" class="btn primary-btn">Ver Más Recetas <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <section id="sobre-mi" class="section-padding bg-light">
+        <div class="container">
+            <h2 class="section-title">Sobre Mí <i class="fas fa-user-circle icon-vibrant"></i></h2>
+            <div class="bio-content">
+                <p><strong>¡Bienvenidos!</strong> Soy Solanger la mente y el corazón detrás de Sabores y Rutas Langi, una trabajadora social de corazón y desarrolladora de software de profesión, con 38 años llenos de sueños y proyectos. Mi mayor alegría reside en compartir momentos con mi increíble esposo e hija, mi motor e inspiración. La curiosidad me lleva a perderme en las calles de nuevas ciudades, a maravillarme con la diversidad cultural y, por supuesto, a deleitarme con la gastronomía local.</p>
+                <p>En este espacio, fusiono mis dos grandes pasiones: los viajes y la cocina. Te invito a explorar conmigo sabores auténticos, descubrir culturas fascinantes y encontrar la conexión que existe entre un destino y su gente a través de sus platos. ¡Prepárate para un viaje lleno de experiencias, recetas y la calidez de un hogar que se expande por el mundo!</p>
+                </div>
+        </div>
+    </section>
+
+
+    <div id="modalCartagena" class="modal">
+        <div class="modal-content">
+            <span class="close-button">×</span>
+            <h3>Cartagena: Un Sueño Colonial a Orillas del Caribe</h3>
+            <div class="modal-image-gallery">
+                <img src="https://images.unsplash.com/photo-1616428463999-52e16f7358a9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NTIyMDF8MHwxfHNlYXJjaHwyMnx8Y2FydGFnZW5hfGVufDB8fHx8MTcxNzU1MzY2NDR8MA&ixlib=rb-4.0.3&q=80&w=1920" alt="Cartagena 1">
+                <img src="https://images.unsplash.com/photo-1610427847425-4b3e6e8e8e1f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NTIyMDF8MHwxfHNlYXJjaHwyMHx8Y2FydGFnZW5hfGVufDB8fHx8MTcxNzU1MzY2NDR8MA&ixlib=rb-4.0.3&q=80&w=1920" alt="Cartagena 2">
+                <img src="https://images.unsplash.com/photo-1610260408223-9c09930c2c1c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NTIyMDF8MHwxfHNlYXJjaHw3fHxjYXJ0YWdlbmF8ZW58MHx8fHwxNzE3NTU2NjA4fDA&ixlib=rb-4.0.3&q=80&w=1920" alt="Cartagena 3">
+            </div>
+            <p>Cartagena de Indias es una joya colonial en la costa caribeña de Colombia, famosa por su impresionante ciudad amurallada, declarada Patrimonio de la Humanidad por la UNESCO. Sus calles empedradas, balcones adornados con flores y coloridas fachadas transportan a los visitantes a otra época. La ciudad ofrece una mezcla vibrante de historia, cultura, vida nocturna y playas tropicales.</p>
+            <p>No dejes de pasear por el barrio de Getsemaní, visitar el Castillo de San Felipe de Barajas y disfrutar de un atardecer mágico desde las murallas. La gastronomía local es exquisita, con mariscos frescos y platos caribeños que deleitarán tu paladar.</p>
+
+            <h4><i class="fas fa-star review-icon"></i> Reseñas (4.8/5)</h4>
+            <div class="review-score">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+            </div>
+            <p>Los visitantes adoran la atmósfera romántica de Cartagena y su vibrante vida nocturna. La historia y arquitectura son puntos fuertemente elogiados.</p>
+
+            <div class="comments-section">
+                <h4><i class="fas fa-comments comment-icon"></i> Comentarios</h4>
+                <div class="comment">
+                    <div class="comment-author">Ana María G. <span class="comment-date">20 Mayo, 2025</span></div>
+                    <p class="comment-text">¡Cartagena es mágica! Sus calles tienen un encanto único y la comida es deliciosa.</p>
+                </div>
+                <div class="comment">
+                    <div class="comment-author">Carlos P. <span class="comment-date">18 Mayo, 2025</span></div>
+                    <p class="comment-text">El atardecer desde la muralla es imperdible. Volvería mil veces.</p>
+                </div>
+                <form class="comment-form">
+                    <textarea placeholder="Deja tu comentario aquí..."></textarea>
+                    <button type="submit" class="btn primary-btn">Enviar Comentario</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div id="modalEjeCafetero" class="modal">
+        <div class="modal-content">
+            <span class="close-button">×</span>
+            <h3>Eje Cafetero: El Corazón Verde de Colombia</h3>
+            <div class="modal-image-gallery">
+                <img src="https://images.unsplash.com/photo-1596706059918-a681c2f9d8a0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NTIyMDF8MHwxfHNlYXJjaHwyfHx0YXlyb25hJTIwY29sb21iaWF8ZW58MHx8fHwxNzE3NTM2NjA4fDA&ixlib=rb-4.0.3&q=80&w=1920" alt="Eje Cafetero 1">
+                <img src="https://images.unsplash.com/photo-1601633534241-e7cf4c803375?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NTIyMDF8MHwxfHNlYXJjaHw0fHxlamUlMjBjYWZldGVyb3xlbnwwfHx8fDE3MTc1MzY1Mjl8MA&ixlib=rb-4.0.3&q=80&w=1920" alt="Eje Cafetero 2">
+                <img src="https://images.unsplash.com/photo-1616428463999-52e16f7358a9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NTIyMDF8MHwxfHNlYXJjaHwyMnx8Y2FydYWdlbmF8ZW58MHwxfHx8MTcxNzU1MzY2NDR8MA&ixlib=rb-4.0.3&q=80&w=1920" alt="Eje Cafetero 3">
+            </div>
+            <p>El Eje Cafetero, declarado Paisaje Cultural Cafetero por la UNESCO, es una región de Colombia famosa por sus exuberantes paisajes de plantaciones de café, pueblos pintorescos y montañas escarpadas. Es el lugar ideal para sumergirse en la cultura cafetera, aprender sobre el proceso del café "de la semilla a la taza" y disfrutar de la calidez de su gente.</p>
+            <p>Visita fincas cafeteras, relájate en termales, explora el Valle de Cocora con sus palmas de cera gigantes y disfruta de la deliciosa gastronomía paisa. ¡Una experiencia rural y cultural inigualable!</p>
+
+            <h4><i class="fas fa-star review-icon"></i> Reseñas (4.7/5)</h4>
+            <div class="review-score">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+            </div>
+            <p>La tranquilidad y belleza de los paisajes del Eje Cafetero son muy apreciadas, así como la oportunidad de aprender sobre el café.</p>
+
+            <div class="comments-section">
+                <h4><i class="fas fa-comments comment-icon"></i> Comentarios</h4>
+                <div class="comment">
+                    <div class="comment-author">Laura R. <span class="comment-date">12 Mayo, 2025</span></div>
+                    <p class="comment-text">Las fincas cafeteras son fascinantes, y el café es el mejor que he probado.</p>
+                </div>
+                <div class="comment">
+                    <div class="comment-author">Andrés M. <span class="comment-date">08 Mayo, 2025</span></div>
+                    <p class="comment-text">El Valle de Cocora es impresionante, una caminata obligatoria.</p>
+                </div>
+                <form class="comment-form">
+                    <textarea placeholder="Deja tu comentario aquí..."></textarea>
+                    <button type="submit" class="btn primary-btn">Enviar Comentario</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div id="modalAmazonas" class="modal">
+        <div class="modal-content">
+            <span class="close-button">×</span>
+            <h3>Amazonas: La Aventura más Salvaje de Colombia</h3>
+            <div class="modal-image-gallery">
+                <img src="https://images.unsplash.com/photo-1596706059918-a681c2f9d8a0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NTIyMDF8MHwxfHNlYXJjaHwyfHx0YXlyb25hJTIwY29sb21iaWF8ZW58MHx8fHwxNzE3NTM2NjA4fDA&ixlib=rb-4.0.3&q=80&w=1920" alt="Amazonas 1">
+                <img src="https://images.unsplash.com/photo-1623912140417-a06f33d262ed?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NTIyMDF8MHwxfHNlYXJjaHwyMnx8Y2FydYWdlbmF8ZW58MHwxfHx8MTcxNzU1MzY2NDR8MA&ixlib=rb-4.0.3&q=80&w=1920" alt="Amazonas 2">
+                <img src="https://images.unsplash.com/photo-1610260408223-9c09930c2c1c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NTIyMDF8MHwxfHNlYXJjaHw3fHxjYXJ0YWdlbmF8ZW58MHwxfHx8MTcxNzU1NjYwOHwzMD&ixlib=rb-4.0.3&q=80&w=1920" alt="Amazonas 3">
+            </div>
+            <p>El Amazonas colombiano es un destino para los amantes de la naturaleza y la aventura. Desde Leticia, la puerta de entrada, puedes explorar la vasta selva, navegar por el río Amazonas, avistar fauna exótica y conocer de cerca la cultura de las comunidades indígenas.</p>
+            <p>Una experiencia transformadora que te conecta con la biodiversidad más grande del planeta. No te pierdas un paseo en canoa al atardecer, la observación de delfines rosados y la visita a los árboles gigantes.</p>
+
+            <h4><i class="fas fa-star review-icon"></i> Reseñas (4.9/5)</h4>
+            <div class="review-score">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+            <p>La inmersión en la naturaleza y la cultura indígena son los puntos más destacados, ofreciendo una aventura única e inolvidable.</p>
+
+            <div class="comments-section">
+                <h4><i class="fas fa-comments comment-icon"></i> Comentarios</h4>
+                <div class="comment">
+                    <div class="comment-author">Sofía C. <span class="comment-date">08 Mayo, 2025</span></div>
+                    <p class="comment-text">Una aventura increíble, la selva es espectacular y los animales fascinantes.</p>
+                </div>
+                <div class="comment">
+                    <div class="comment-author">Ricardo G. <span class="comment-date">03 Mayo, 2025</span></div>
+                    <p class="comment-text">Conocer las comunidades indígenas fue una experiencia muy enriquecedora.</p>
+                </div>
+                <form class="comment-form">
+                    <textarea placeholder="Deja tu comentario aquí..."></textarea>
+                    <button type="submit" class="btn primary-btn">Enviar Comentario</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div id="modalBandejaPaisa" class="modal">
+        <div class="modal-content">
+            <span class="close-button">×</span>
+            <h3>Bandeja Paisa: El Sabor Emblemático de Antioquia</h3>
+            <div class="modal-image-gallery">
+                <img src="https://images.unsplash.com/photo-1601633534241-e7cf4c803375?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NTIyMDF8MHwxfHNlYXJjaHw0fHxlamUlMjBjYWZldGVyb3xlbnwwfHx8fDE3MTc1MzY1Mjl8MA&ixlib=rb-4.0.3&q=80&w=1920" alt="Bandeja Paisa 1">
+                <img src="https://images.unsplash.com/photo-1596706059918-a681c2f9d8a0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NTIyMDF8MHwxfHNlYXJjaHwyfHx0YXlyb25hJTIwY29sb21iaWF8ZW58MHx8fHwxNzE3NTM2NjA4fDA&ixlib=rb-4.0.3&q=80&w=1920" alt="Bandeja Paisa 2">
+            </div>
+            <p>La Bandeja Paisa es un plato tradicional y abundante de la región de Antioquia, Colombia. Es un festín que combina arroz blanco, frijoles rojos, carne molida, chicharrón, huevo frito, plátano maduro, aguacate, arepa y chorizo. Es un reflejo de la diversidad agrícola de la región y un símbolo de la generosidad paisa.</p>
+            <p>Es un plato contundente que ofrece una explosión de sabores y texturas en cada bocado. Ideal para recargar energías y disfrutar de la verdadera esencia de la cocina colombiana.</p>
+
+            <h4><i class="fas fa-star review-icon"></i> Reseñas (4.9/5)</h4>
+            <div class="review-score">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+            <p>Amada por su autenticidad y el tamaño de sus porciones, la Bandeja Paisa es un "must-try" para los visitantes.</p>
+
+            <div class="comments-section">
+                <h4><i class="fas fa-comments comment-icon"></i> Comentarios</h4>
+                <div class="comment">
+                    <div class="comment-author">Sofía C. <span class="comment-date">08 Mayo, 2025</span></div>
+                    <p class="comment-text">Una explosión de sabores, ¡delicioso y muy completo!</p>
+                </div>
+                <div class="comment">
+                    <div class="comment-author">Ricardo G. <span class="comment-date">03 Mayo, 2025</span></div>
+                    <p class="comment-text">La verdadera comida colombiana, una experiencia culinaria inolvidable.</p>
+                </div>
+                <form class="comment-form">
+                    <textarea placeholder="Deja tu comentario aquí..."></textarea>
+                    <button type="submit" class="btn primary-btn">Enviar Comentario</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div id="modalAjiaco" class="modal">
+        <div class="modal-content">
+            <span class="close-button">×</span>
+            <h3>Ajiaco Santafereño: La Tradición Culinaria de Bogotá</h3>
+            <div class="modal-image-gallery">
+                <img src="https://images.unsplash.com/photo-1601633534241-e7cf4c803375?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NTIyMDF8MHwxfHNlYXJjaHw0fHxlamUlMjBjYWZldGVyb3xlbnwwfHx8fDE3MTc1MzY1Mjl8MA&ixlib=rb-4.0.3&q=80&w=1920" alt="Ajiaco 1">
+                <img src="https://images.unsplash.com/photo-1596706059918-a681c2f9d8a0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NTIyMDF8MHwxfHNlYXJjaHwyfHx0YXlyb25hJTIwY29sb21iaWF8ZW58MHx8fHwxNzE3NTM2NjA4fDA&ixlib=rb-4.0.3&q=80&w=1920" alt="Ajiaco 2">
+            </div>
+            <p>El Ajiaco Santafereño es una sopa tradicional de Bogotá, Colombia, famosa por su cremosidad y combinación de tres tipos de papas (pastusa, sabanera y criolla), pollo desmenuzado, mazorca, y la hierba guasca, que le da su sabor característico. Se sirve tradicionalmente con crema de leche, alcaparras y aguacate.</p>
+            <p>Este plato es un símbolo de la gastronomía bogotana, ideal para el clima frío de la capital y una experiencia culinaria reconfortante y deliciosa.</p>
+
+            <h4><i class="fas fa-star review-icon"></i> Reseñas (4.7/5)</h4>
+            <div class="review-score">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+            </div>
+            <p>Muy elogiado por su sabor auténtico y reconfortante, perfecto para el clima de Bogotá.</p>
+
+            <div class="comments-section">
+                <h4><i class="fas fa-comments comment-icon"></i> Comentarios</h4>
+                <div class="comment">
+                    <div class="comment-author">Laura S. <span class="comment-date">15 Abril, 2025</span></div>
+                    <p class="comment-text">El mejor ajiaco que he probado, ¡perfecto para un día frío!</p>
+                </div>
+                <div class="comment">
+                    <div class="comment-author">Pedro C. <span class="comment-date">10 Abril, 2025</span></div>
+                    <p class="comment-text">Me encantó la combinación de papas y el toque de las guascas.</p>
+                </div>
+                <form class="comment-form">
+                    <textarea placeholder="Deja tu comentario aquí..."></textarea>
+                    <button type="submit" class="btn primary-btn">Enviar Comentario</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div id="modalEmpanadas" class="modal">
+        <div class="modal-content">
+            <span class="close-button">×</span>
+            <h3>Empanadas Colombianas: El Snack Favorito de Todos</h3>
+            <div class="modal-image-gallery">
+                <img src="https://images.unsplash.com/photo-1601633534241-e7cf4c803375?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NTIyMDF8MHwxfHNlYXJjaHw0fHxlamUlMjBjYWZldGVyb3xlbnwwfHx8fDE3MTc1MzY1Mjl8MA&ixlib=rb-4.0.3&q=80&w=1920" alt="Empanada 1">
+                <img src="https://images.unsplash.com/photo-1596706059918-a681c2f9d8a0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NTIyMDF8MHwxfHNlYXJjaHwyfHx0YXlyb25hJTIwY29sb29iaWF8ZW58MHx8fHwxNzE3NTM2NjA4fDA&ixlib=rb-4.0.3&q=80&w=1920" alt="Empanada 2">
+            </div>
+            <p>Las empanadas son un ícono de la gastronomía colombiana, presentes en cada esquina y celebración. Se trata de pequeñas masas de maíz rellenas de carne, papa, arroz o vegetales, fritas hasta obtener una textura dorada y crujiente. Cada región tiene su propia versión, ofreciendo una deliciosa diversidad de sabores.</p>
+            <p>Perfectas como snack, desayuno o acompañamiento. Se suelen disfrutar con ají o limón, realzando aún más su sabor característico.</p>
+
+            <h4><i class="fas fa-star review-icon"></i> Reseñas (4.8/5)</h4>
+            <div class="review-score">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+            </div>
+            <p>Un snack favorito universal, elogiadas por su versatilidad y sabor.</p>
+
+            <div class="comments-section">
+                <h4><i class="fas fa-comments comment-icon"></i> Comentarios</h4>
+                <div class="comment">
+                    <div class="comment-author">Mariana F. <span class="comment-date">05 Abril, 2025</span></div>
+                    <p class="comment-text">¡No puedes irte de Colombia sin comer una empanada diaria!</p>
+                </div>
+                <div class="comment">
+                    <div class="comment-author">Juan D. <span class="comment-date">30 Marzo, 2025</span></div>
+                    <p class="comment-text">Las de carne con ají son mi perdición. ¡Deliciosas!</p>
+                </div>
+                <form class="comment-form">
+                    <textarea placeholder="Deja tu comentario aquí..."></textarea>
+                    <button type="submit" class="btn primary-btn">Enviar Comentario</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+    <footer class="main-footer">
+        <div class="container footer-content">
+            <div class="footer-col about-us">
+                <h4>Sobre Sabores y Rutas <span class="highlight-text">LANGI</span></h4>
+                <p>Tu guía definitiva para explorar los destinos más fascinantes y los sabores más auténticos de Colombia. ¡Aventuras y delicias te esperan!</p>
+                <div class="social-links">
+                    <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+                    <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://youtube.com" target="_blank"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-col quick-links">
+                <h4>Enlaces Rápidos</h4>
+                <ul>
+                    <li><a href="#home">Inicio</a></li>
+                    <li><a href="#viajes">Viajes</a></li>
+                    <li><a href="#comida">Comida</a></li>
+                    <li><a href="#sobre-mi">Sobre Mí</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col contact-info">
+                <h4>Contáctanos</h4>
+                <p><i class="fas fa-map-marker-alt"></i> Rionegro, Antioquia, Colombia</p>
+                <p><i class="far fa-envelope"></i> saboresyrutasLangi@gmail.com</p>
+            </div>
+
+            </div>
+        <div class="footer-bottom">
+            <div class="container">
+                © 2025 Sabores y Rutas LANGI.
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const openModalButtons = document.querySelectorAll('[data-modal-target]');
+            const closeButtons = document.querySelectorAll('.close-button');
+            const modals = document.querySelectorAll('.modal');
+
+            openModalButtons.forEach(button => {
+                button.addEventListener('click', () => {
+                    const modal = document.querySelector(button.dataset.modalTarget);
+                    if (modal) {
+                        modal.style.display = 'block';
+                        document.body.style.overflow = 'hidden'; 
+                    }
+                });
+            });
+
+            closeButtons.forEach(button => {
+                button.addEventListener('click', () => {
+                    const modal = button.closest('.modal');
+                    if (modal) {
+                        modal.style.display = 'none';
+                        document.body.style.overflow = '';
+                    }
+                });
+            });
+
+            modals.forEach(modal => {
+                modal.addEventListener('click', (e) => {
+                    if (e.target === modal) {
+                        modal.style.display = 'none';
+                        document.body.style.overflow = ''; 
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>

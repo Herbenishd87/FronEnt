@@ -1,0 +1,11 @@
+Tipos de propiedades CSS
+
+color:El color del texto de un elemento.
+font-size: El tamaño de la fuente.
+font-family: El tipo de fuente.
+font-weight: El grosor de la fuente (negrita, normal, etc.).
+text-align: La alineación del texto (izquierda, derecha, centro, justificado).
+text-decoration: Líneas de texto (subrayado, tachado, etc.).
+line-height: La altura de línea
+
+

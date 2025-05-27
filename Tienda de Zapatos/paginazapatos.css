@@ -1,0 +1,400 @@
+:root {
+    --primary-color: #31518f; /* Azul oscuro para el header y botones primarios */
+    --secondary-color: #6a8ec2; /* Azul más claro para el hero section y features */
+    --accent-color: #ef4444; /* Rojo para acentos y precios */
+    --text-color: #333;
+    --light-bg: #f3f4f6; /* Gris claro para el fondo principal */
+    --dark-bg: #2d3748; /* Gris oscuro para el footer */
+    --card-bg: #ffffff;
+    --border-color: #e2e8f0;
+    --shadow-light: 0 4px 6px rgba(0, 0, 0, 0.1);
+    --shadow-medium: 0 10px 15px rgba(0, 0, 0, 0.1);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    color: var(--text-color);
+    line-height: 1.6;
+    background-color: var(--light-bg);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 1rem 0;
+    box-shadow: var(--shadow-medium);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 25px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: var(--accent-color);
+}
+
+/* Hero Section */
+#hero {
+    background-color: var(--secondary-color);
+    color: white;
+    text-align: center;
+    padding: 80px 20px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('https://via.placeholder.com/1600x400/6a8ec2/ffffff?text=ZAPATOS+DE+CALIDAD'); /* Placeholder for a background image */
+    background-size: cover;
+    background-position: center;
+}
+
+#hero h1 {
+    font-size: 2.8rem;
+    margin-bottom: 25px;
+    font-weight: 700;
+    line-height: 1.2;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.btn-primary {
+    background-color: var(--accent-color);
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    text-decoration: none; /* In case it's an <a> tag */
+    display: inline-block;
+}
+
+.btn-primary:hover {
+    background-color: #d63333; /* Slightly darker red */
+    transform: translateY(-2px);
+}
+
+/* Most Popular Shoes Section */
+.most-popular-shoes {
+    padding: 60px 0;
+    text-align: center;
+    background-color: var(--light-bg);
+}
+
+.most-popular-shoes h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: var(--primary-color);
+    font-weight: 700;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    justify-content: center;
+}
+
+.product-card {
+    background-color: var(--card-bg);
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: var(--shadow-light);
+    text-align: left;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid var(--border-color);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-medium);
+}
+
+.product-card h3 {
+    font-size: 1.7rem;
+    margin-bottom: 10px;
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+.product-card .product-type {
+    font-size: 1.2rem;
+    color: var(--text-color);
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.product-card .product-description {
+    font-size: 0.95rem;
+    color: #6b7280;
+    margin-bottom: 20px;
+    flex-grow: 1; /* Allows description to take up available space */
+}
+
+.product-card .product-price {
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: var(--accent-color);
+    margin-top: auto; /* Pushes price to the bottom */
+    margin-bottom: 20px;
+}
+
+.btn-secondary {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    text-decoration: none;
+    display: inline-block;
+    width: 100%; /* Make button full width of card */
+    text-align: center;
+}
+
+.btn-secondary:hover {
+    background-color: #2a4574; /* Slightly darker primary color */
+    transform: translateY(-2px);
+}
+
+/* Why Choose Us Section */
+.why-choose-us {
+    background-color: var(--secondary-color); /* Matches the blue background in the image */
+    color: white;
+    padding: 60px 0;
+    text-align: center;
+}
+
+.why-choose-us h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: white; /* Title is white on blue background */
+    font-weight: 700;
+}
+
+.feature-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    justify-content: center;
+    max-width: 900px; /* Constrain width of feature cards */
+    margin: 0 auto;
+}
+
+.feature-card {
+    background-color: rgba(255, 255, 255, 0.2); /* Semi-transparent white background */
+    backdrop-filter: blur(5px); /* Optional: adds a subtle blur effect */
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: var(--shadow-light);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    border: 1px solid rgba(255, 255, 255, 0.3); /* Lighter border */
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+    background-color: rgba(255, 255, 255, 0.3); /* Slightly more opaque on hover */
+}
+
+.feature-card .icon {
+    font-size: 3rem;
+    color: white; /* Icons are white */
+    margin-bottom: 20px;
+}
+
+.feature-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: white;
+    font-weight: 600;
+}
+
+.feature-card p {
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.9); /* Slightly transparent white text */
+}
+
+/* Footer */
+footer {
+    background-color: var(--dark-bg);
+    color: white;
+    text-align: center;
+    padding: 2rem 0;
+    margin-top: auto; /* Pushes footer to the bottom */
+}
+
+footer .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-links {
+    margin-bottom: 15px;
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 0.95rem;
+    margin: 0 15px;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: var(--accent-color);
+}
+
+footer p {
+    font-size: 0.9rem;
+    margin-bottom: 5px;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.heart-icon {
+    color: var(--accent-color); /* Red heart */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul {
+        margin-top: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    nav ul li {
+        margin: 0 10px 10px 10px;
+    }
+
+    #hero h1 {
+        font-size: 2rem;
+    }
+
+    .most-popular-shoes h2,
+    .why-choose-us h2 {
+        font-size: 2rem;
+    }
+
+    .product-grid,
+    .feature-grid {
+        grid-template-columns: 1fr; /* Stack cards on small screens */
+    }
+
+    .footer-links {
+        flex-direction: column;
+    }
+
+    .footer-links a {
+        margin: 5px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo {
+        font-size: 1.5rem;
+    }
+
+    nav ul li {
+        margin: 0 8px 8px 8px;
+    }
+
+    #hero h1 {
+        font-size: 1.6rem;
+        padding: 0 10px;
+    }
+
+    .btn-primary {
+        padding: 12px 25px;
+        font-size: 1rem;
+    }
+
+    .most-popular-shoes h2,
+    .why-choose-us h2 {
+        font-size: 1.8rem;
+    }
+
+    .product-card {
+        padding: 20px;
+    }
+
+    .product-card h3 {
+        font-size: 1.5rem;
+    }
+
+    .product-card .product-type {
+        font-size: 1.1rem;
+    }
+
+    .product-card .product-price {
+        font-size: 1.4rem;
+    }
+
+    .feature-card .icon {
+        font-size: 2.5rem;
+    }
+
+    .feature-card h3 {
+        font-size: 1.3rem;
+    }
+
+    .feature-card p {
+        font-size: 0.9rem;
+    }
+}

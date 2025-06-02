@@ -1,17 +1,16 @@
 :root {
     /* Colores primarios y de acento - Más saturados y con energía */
-    --primary-color: #FF6B6B; /* Rojo Coral vibrante */
-    --secondary-color: #4ECDC4; /* Turquesa enérgico */
-    --accent-color-1: #FFA500; /* Anaranjado */
-    --accent-color-2: #45B7D1; /* Azul Cielo claro */
-    --accent-color-3: #8B4789; /* Morado Profundo (para algunos detalles) */
+    --primary-color: #FF6B6B; 
+    --secondary-color: #4ECDC4;
+    --accent-color-1: #FFA500;
+    --accent-color-2: #45B7D1; 
+    --accent-color-3: #8B4789; 
 
     /* Colores de texto y fondo */
-    --text-dark: #2c3e50; /* Gris Oscuro casi negro */
-    --text-light: #6a7c8e; /* Gris medio para descripciones */
-    --bg-light: #fdfdfd; /* Fondo casi blanco para contraste (VUELVE AL ORIGINAL) */
-    --bg-dark: #ADD8E6; /* Fondo oscuro (para header/footer) (AZUL CIELO) */
-    --white: #ffffff;
+    --text-dark: #2c3e50; 
+    --text-light: #6a7c8e; 
+    --bg-light: #fdfdfd;
+    --bg-dark: #ADD8E6; 
 
     /* Bordes y sombras */
     --border-color: #e0e6ed;
@@ -34,7 +33,7 @@ body {
     font-family: 'Poppins', sans-serif;
     line-height: 1.7;
     color: var(--text-dark);
-    background-color: var(--bg-light); /* VUELVE A BLANCO CASI BLANCO */
+    background-color: var(--bg-light); 
     margin: 0;
     padding: 0;
 }
@@ -86,7 +85,7 @@ p {
 }
 
 .bg-light {
-    background-color: var(--bg-light); /* VUELVE A BLANCO CASI BLANCO */
+    background-color: var(--bg-light);
 }
 
 .section-title {
@@ -201,11 +200,11 @@ p {
 }
 
 .logo a:hover {
-    color: var(--accent-color-1); /* ANARANJADO */
+    color: var(--accent-color-1); 
 }
 
 .logo .highlight-text {
-    color: var(--accent-color-1); /* ANARANJADO */
+    color: var(--accent-color-1); 
     font-size: 0.8em;
     margin-left: 5px;
 }
@@ -235,7 +234,7 @@ p {
     position: absolute;
     width: 0;
     height: 3px;
-    background-color: var(--accent-color-1); /* ANARANJADO */
+    background-color: var(--accent-color-1); 
     left: 0;
     bottom: -8px;
     transition: width var(--transition-speed);
@@ -248,12 +247,12 @@ p {
 }
 
 .main-nav ul li a:hover {
-    color: var(--accent-color-1); /* ANARANJADO */
+    color: var(--accent-color-1);
 }
 
 /* Hero Section */
 .hero-section {
-    /* VUELVE AL OVERLAY ORIGINAL OSCURO */
+
     background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://images.unsplash.com/photo-1579294215383-0599a071239c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NTIyMDF8MHwxfHNlYXJjaHw3fHxiYW5kZWjaJTIwcGFpc2F8ZW58MHx8fHwxNzE3NTM3OTI0fDA&ixlib=rb-4.0.3&q=80&w=1920') no-repeat center center/cover;
     color: var(--white);
     text-align: center;
@@ -354,10 +353,10 @@ p {
 }
 
 .travel-card .card-overlay {
-    background-color: var(--accent-color-1); /* ANARANJADO */
+    background-color: var(--accent-color-1); 
 }
 .food-card .card-overlay {
-    background-color: var(--accent-color-1); /* ANARANJADO */
+    background-color: var(--accent-color-1); 
 }
 
 .card-overlay i {
@@ -509,7 +508,7 @@ p {
     transform: translateX(-50%);
     width: 80px;
     height: 4px;
-    background-color: var(--accent-color-1); /* ANARANJADO */
+    background-color: var(--accent-color-1); 
     border-radius: 2px;
 }
 
@@ -527,7 +526,7 @@ p {
 .modal-content h4 .review-icon,
 .modal-content h4 .comment-icon {
     margin-left: 10px;
-    color: var(--accent-color-1); /* ANARANJADO */
+    color: var(--accent-color-1); 
 }
 
 
@@ -561,14 +560,14 @@ p {
 .review-score {
     text-align: center;
     font-size: 2.5em;
-    color: var(--accent-color-1); /* ANARANJADO */
+    color: var(--accent-color-1); 
     margin-bottom: 30px;
     letter-spacing: 2px;
 }
 
 .review-score i {
     margin: 0 4px;
-    filter: drop-shadow(0 0 5px rgba(255, 165, 0, 0.5)); /* Ajustado para el nuevo color */
+    filter: drop-shadow(0 0 5px rgba(255, 165, 0, 0.5)); 
 }
 
 .comments-section {
@@ -578,7 +577,7 @@ p {
 }
 
 .comment {
-    background-color: var(--bg-light); /* VUELVE A BLANCO CASI BLANCO */
+    background-color: var(--bg-light); 
     border-left: 5px solid var(--secondary-color);
     border-radius: 8px;
     padding: 20px 25px;
@@ -647,7 +646,7 @@ p {
 
 /* Footer */
 .main-footer {
-    background-color: var(--bg-dark); /* AZUL CIELO */
+    background-color: var(--bg-dark); 
     color: var(--white);
     padding: 80px 0 30px;
     font-size: 1em;
@@ -665,7 +664,7 @@ p {
 }
 
 .footer-col h4 {
-    color: var(--accent-color-1); /* ANARANJADO */
+    color: var(--accent-color-1); 
     font-size: 1.5em;
     margin-bottom: 25px;
     position: relative;
@@ -721,7 +720,7 @@ p {
     transform: translateY(-5px) rotate(5deg);
 }
 
-/* Se eliminan los estilos para newsletter-form aquí */
+
 
 .footer-bottom {
     text-align: center;
@@ -885,7 +884,7 @@ p {
         margin: 0 12px;
     }
 
-    /* Se eliminan los estilos del newsletter responsivo aquí */
+   
 
     .modal-content {
         margin: 8% auto;

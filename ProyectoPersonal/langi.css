@@ -948,3 +948,16 @@ p {
         min-height: 90px;
     }
 }
+/* --- ESTILOS PARA RESALTAR EL ENLACE ACTIVO EN EL MENÚ --- */
+/* Esto hace que el enlace del menú se ilumine cuando te desplazas a esa sección */
+.main-nav ul li a.active-nav-link {
+    color: #FF5733; /* Color naranja brillante para el texto. Puedes cambiarlo si quieres. */
+    font-weight: bold; /* Hace el texto del enlace más grueso (negrita) */
+    border-bottom: 2px solid #FF5733; /* Pone una línea naranja de 2 pixeles debajo del texto */
+    padding-bottom: 5px; /* Un pequeño espacio entre el texto y la línea de abajo */
+}
+
+/* Esto hace que el cambio de color y la línea aparezcan suavemente, no de golpe */
+.main-nav ul li a {
+    transition: all 0.3s ease; /* Transición suave de 0.3 segundos para todos los cambios */
+}
